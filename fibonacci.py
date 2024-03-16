@@ -19,24 +19,19 @@ def fibonacci(n):
     a, b = 0,1 
     fibonacci_sequence =[a,b]
     # complete here
-    #print(a)
-    #print(b)
     for _ in range(2, n + 1):
       c = a + b
       # Complete here
       a, b=b,c
-      #b=c
-    return fibonacci_sequence# add the variable to be returned
-     
-
+      
+    return fibonacci_sequence
+# add the variable to be returned
 # Get the number of terms from the user
 num_terms = int(input("Enter the number of terms: "))
-
 # Generate the Fibonacci sequence
 fibonacci_sequence = []
 for i in range(num_terms):
   fibonacci_sequence.append(fibonacci(i))
-
 # Print the Fibonacci sequence
 print(fibonacci_sequence)
 
